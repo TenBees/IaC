@@ -17,7 +17,7 @@ variable "pm_user" {
   sensitive   = true
 }
 provider "proxmox" {
-  pm_api_url      = "https://192.168.1.5:8006/api2/json"
+  pm_api_url      = "https://prox.ten-bees.com/api2/json"
   pm_user         = var.pm_user
   pm_password     = var.pm_password
   pm_tls_insecure = true  # Not recommended for production
