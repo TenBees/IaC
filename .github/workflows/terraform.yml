@@ -37,6 +37,7 @@ jobs:
         id: plan
         run: terraform plan -out=tfplan
         env:
+          TF_LOG: DEBUG
           TF_VAR_pm_user: ${{ secrets.PM_USER }}
           TF_VAR_pm_password: ${{ secrets.PM_PASSWORD }}
 
