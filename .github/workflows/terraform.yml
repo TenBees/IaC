@@ -11,7 +11,7 @@ on:
 jobs:
   terraform:
     name: Terraform Workflow
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Test API Access
