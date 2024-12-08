@@ -18,8 +18,8 @@ variable "pm_user" {
 }
 provider "proxmox" {
   pm_api_url      = "https://prox.ten-bees.com/api2/json"
-  pm_user         = ${{ secrets.PM_USER }}
-  pm_password     = ${{ secrets.PM_PASSWORD }}
+  pm_user         = var.pm_user
+  pm_password     = var.pm_password
   pm_tls_insecure = true  # Not recommended for production
 }
 
